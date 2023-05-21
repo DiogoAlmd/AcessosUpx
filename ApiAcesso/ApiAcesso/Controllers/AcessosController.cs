@@ -54,20 +54,20 @@ namespace ApiAcesso.Controllers
         }
 
         [HttpPost("[action]")]
-        public async Task<IActionResult> AdicionaAcesso(Acesso request)
+        public async Task<IActionResult> AdicionaAcesso([FromBody] Acesso request)
         {
             try
             {
                 var repository = new GetLocation();
 
-                var teste = await repository.GetGeoInfoAsync(request.IpAddress);
+                var localizacao = await repository.GetGeoInfoAsync(request.IpAddress);
 
                 using (var conexao = new SqlConnection(_connectionString))
                 {
                     await conexao.OpenAsync();
 
                     using (var comando = new SqlCommand($@"INSERT INTO Acesso(NFC, Arduino, Localizacao, DATA)
-                                                           values ('{request.NFC}', '{request.Arduino}', '{teste}', GETDATE());", conexao)
+                                                           values ('{request.NFC}', '{request.Arduino}', '{localizacao}', GETDATE());", conexao)
                                                         )
                     {
                         await comando.ExecuteNonQueryAsync();
