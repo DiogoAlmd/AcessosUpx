@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JpTr4oFLglsOnUJolJ3+kkSncjOxRR0+U1DeVGUF1MnqEB5pM2wshv/ntXwb/ZRjVxz7H1LW1myRvuu0GraVhg==",
+  "dgSpecHash": "rlOOlbGf8hRBTaAvmH3IVb5slaEfGnscPmHM03FptJJEFrQ2z7amDJq0U0rzbrYMeBxwvVvJg6tyKjQCt8LnEw==",
   "success": true,
-  "projectFilePath": "D:\\Programacao\\projetos\\acessosUpx\\ApiAcesso\\ApiAcesso\\ApiAcesso.csproj",
+  "projectFilePath": "C:\\Users\\diogo\\OneDrive\\Documentos\\GitHub\\AcessosUpx\\ApiAcesso\\ApiAcesso\\ApiAcesso.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\diogo\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\diogo\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
